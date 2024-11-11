@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <title>Amit Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav class="nav">
+                    <a class="brand-title" href="#">Amit Yadav</a>
+                    <ul id="sidemenu">
+                        <li class="home"><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="container-bio">
+                    <div class="header-text">
+                        <!-- <p class="bio-p">Web Developer</p> -->
+                        <p class="bio-p" id="dynamic-text">Web Developer</p>
+
+                        <h1 class="bio-h1">Hey, I'm <span>Amit</span> <br> From Mumbai.</h1>
+                    </div>
+                    <!-- <div class="header-photo">
+                        <img src="Amit-yadav.png" alt="Me">
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <!-- <img src="" alt=""> -->
+                        <lord-icon id="person" src="https://cdn.lordicon.com/gkgkfbzm.json" trigger="in"
+                            state="in-reveal" colors="primary:#7eddf2,secondary:#08a88a">
+                        </lord-icon>
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title about-title">About Me</h1>
+                        <p>I am computer science graduate with a passion for programming and a strong foundation in various technologies. My skills and knowledge encompass a wide range of programming languages, tools, and frameworks, making me a versatile and adaptable developer. i have a deep-seated passion for continuous learning and staying up-to-date with the latest trends in the tech industry. I am committed to enhancing my skills and exploring new technologies to tackle complex challenges effectively.
+                        </p>
+
+                        <div class="tab-title">
+                            <p class="tab-link active-link" onclick="ontab('skills')">Skills</p>
+                            <p class="tab-link" onclick="ontab('experience')">Experience</p>
+                            <p class="tab-link" onclick="ontab('education')">Education</p>
+                        </div>
+
+                        <div id="skills" class="tab-content active-tab">
+                            <ul>
+                                <li><span>Programing Languages</span><br>
+                                    Python, Java, C, JavaScript, PHP
+                                </li>
+                                <li><span>Front-End</span><br>
+                                    HTML5, CSS3, JavaScript, PHP
+                                </li>
+                                <li><span>Back-End</span><br>
+                                    Node.js
+                                </li>
+                                <li><span>Database</span><br>
+                                    MySql,Oracle,postgres
+                                </li>
+                                <li><span>Data visualization skills</span><br>
+                                    numpy, pandas, matplotlib, seaborn,sk-learn,iris
+                                </li>
+                                <li><span>Tools</span><br>
+                                    Tableau, Canvas, Figma, VS Code,chatgpt,slidesgo,
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="experience" class="tab-content">
+                            <ul>
+                                <li><span>Data Analyst - MCM private limited</span><br><br>
+                                    I  Scrab the data and store in csv files with the help of python after that I plot the data in GUI based. <br><br>
+                                    I worked  web development and data visualization, I have built dynamic dashboards by scraping data with Python, processing and storing it in CSV files, and integrating the visualizations into interactive, frontend-based interfaces using JavaScript, HTML, and CSS. I specialize in creating comprehensive reports and delivering insightful, data-driven solutions <br><br>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="education" class="tab-content">
+                            <ul>
+                                <li><span>Bachelor of Science (Computer Science) 2020 - 2023</span><br>
+                                    Nagindas Khandwala Colege (Autonomous) ------------- CGPA - 9.32
+                                </li>
+                                <li><span>Location</span><br>
+                                    Jogeshwari (West)
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+
+        <div id="services">
+            <div class="container services-container">
+                <!-- <h1 class="sub-title services-title">My Services</h1> -->
+                <h1 class="sub-title services-title services-heading">
+                    <span class="my-title">My&nbsp;</span> <span class="services-word">Projects</span>
+                </h1>
+
+                <div class="services-list">
+                    <div>
+                        <h2>E-voting System using blockchain</h2>
+                        <p>A Web based system for conducting the vote which is conducted through a blockchain system (Ganache) Truffle to secure a election process from end to end encryption.
+                            It is a React JS Based application with the help of Truffle and Mysql for Backend Purpose.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>Naive Bayes Classification</h2>
+                        <p>App based system, which is based on Bayes theorem and used for solving classification problems.
+                            It is mainly used in text classification that includes a high-dimensional training Datasets.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <h2>India Covid-19 Data Analysis</h2>
+                        <p>Analyzed COVID-19 state data using Jupyter Notebook and
+                            Python libraries such as pandas, seaborn, and numpy etc.  Conducted initial data exploration using statistical functions
+                            and visualizations.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Portfolio -->
+
+        <div id="portfolio">
+            <div class="container work-container">
+                <h1 class="sub-title services-title work-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="brain.jpg" alt="">
+                        <div class="layer">
+                            <h3>E-voting System using blockchain</h3>
+                            <p>A Web based system for conducting the vote which is conducted through a blockchain system (Ganache) Truffle to secure a election process from end to end encryption.
+                            It is a React JS Based application with the help of Truffle and Mysql for Backend Purpose.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="naive.jpg" alt="">
+                        <div class="layer">
+                            <h3>Naive Bayes Classification</h3>
+                            <p>App based system, which is based on Bayes theorem and used for solving classification problems.
+                                It is mainly used in text classification that includes a high-dimensional training Datasets.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="web.jpg" alt="">
+                        <div class="layer">
+                            <h3>India Covid-19 Data Analysis</h3>
+                            <p>Analyzed COVID-19 state data using Jupyter Notebook and
+                                Python libraries such as pandas, seaborn, and numpy etc.  Conducted initial data exploration using statistical functions and visualizations.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+
+        <div id="contact">
+            <div class="container contact-container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> amityadav55096@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9987010855</p>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/devotee_eng/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/amit-yadav46/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Amityadav-79"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:amityadav55096@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+                        </div>
+                        <a href="AmitFrontendDev63.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="myForm" action="">
+                            <input id="name" class="form-pop" type="text" name="Name" placeholder="Enter name" required>
+                            <input id="email" class="form-pop" type="email" name="Email" placeholder="Enter email"
+                                required>
+                            <textarea id="feedback" class="form-pop" name="Message" rows="6"
+                                placeholder="Your message"></textarea>
+                            <div id="message">Thank you for your response!</div>
+                            <button type="submit" class="btn btn-2">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="scroll-container">
+            <p class="copyright">Copyright &copy; Amit Yadav. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
