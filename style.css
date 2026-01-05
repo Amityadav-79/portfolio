@@ -13,7 +13,7 @@ body {
 
 
 #header {
-    background-image: url("eyes.jpg");
+    background-image: url("mern.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -785,6 +785,7 @@ nav .fa-solid {
     .copyright {
         animation: scroll 8s linear infinite;
     }
+
 
 
 }
