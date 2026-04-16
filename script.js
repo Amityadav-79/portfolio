@@ -127,3 +127,22 @@ window.addEventListener('scroll', () => {
 });
 
 
+//demonstracte code this demo
+document.getElementById("myForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page reload
+
+    let message = document.getElementById("message");
+
+    message.style.display = "block"; // show message
+
+    // Optional: clear form
+    this.reset();
+
+    // Optional: hide message after 3 sec
+    setTimeout(() => {
+        message.style.display = "none";
+    }, 3000);
+});
+
+message.classList.add("show");
+
